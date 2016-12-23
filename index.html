@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="public/vendor/css/normalize.css">
+    <link rel="stylesheet" href="public/vendor/css/codemirror.css">
+    <link rel="stylesheet" href="public/vendor/css/blackboard.css">
+    <link rel="stylesheet" href="public/vendor/css/mdi.min.css">
+    <link rel="stylesheet" href="public/vendor/css/styles.css">
+
+</head>
+<body>
+    
+    <header id="main-menu">
+      <nav>
+        <!-- <a href="#newFile">Novo arquivo</a> -->
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div id="project-tree"></div>
+      
+      <div class="project-visu">
+        <div id="graph-rgraph" class="graph"></div>      
+        <div id="graph-icicle" class="graph"></div>      
+      </div>
+
+      <div class="project-json-view">
+        <pre id="pre-json" class="project-tree-json cm-s-blackboard CodeMirror"></pre>
+        <pre id="pos-json" class="project-tree-json cm-s-blackboard CodeMirror"></pre>        
+      </div>
+    </div>
+
+    <!-- <div class="modal">
+      <div class="modal-bg"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          header
+        </div>
+        <div class="modal-body">
+          body
+        </div>
+      </div>
+    </div> -->
+
+    <script src="public/vendor/js/jit.js"></script>
+    <script src="public/vendor/js/codemirror.js"></script>
+    <script src="public/vendor/js/clike.js"></script>
+    <script src="public/vendor/js/javascript.js"></script>
+    <script src="public/vendor/js/runmode.js"></script>
+    <script src="public/vendor/js/script.js"></script>
+
+    <script>
+      
+    var $newFile = document.querySelector('#main-menu a[href*="#newFile"]');
+    $newFile.addEventListener('click', (e) => {
+      e.preventDefault();
+
+
+    });
+
+    </script>
+
+</body>
+</html>
